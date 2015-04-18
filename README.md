@@ -9,6 +9,7 @@ Weeks](https://pragprog.com/book/btlang/seven-languages-in-seven-weeks)
 Starting with the `ubuntu/trusty64` box, we've included:
 
 * build-essentials
+* cmake
 * yajl
 * libevent
 * pcre
