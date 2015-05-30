@@ -37,12 +37,10 @@ mkdir -p /opt/io_lang
 cd /opt/io_lang
 git clone https://github.com/stevedekorte/io.git
 
-echo "  Building io"
-mkdir -p /opt/io_lang/io/build
-cd /opt/io_lang/build
-cmake ..
-make install
+echo "  Building Io"
+cd /opt/io_lang/io
+./build.sh
 
-echo "  Running vm tests"
-cd /opt/io_lang/build
-io ../libs/iovm/tests/correctness/run.io
+echo "  Installing Io"
+cd /opt/io_lang/io/build
+make install
